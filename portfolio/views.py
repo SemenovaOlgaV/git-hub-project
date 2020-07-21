@@ -6,7 +6,7 @@ from .forms import TaskForm
 # Create your views here.
 def index(request):
     tasks = Task.objects.order_by('-id')
-    return render(request, 'portfolio/index.html', {'title':'Главная страница сайта', 'tasks': tasks})
+    return render(request, 'portfolio/index.html', {'title':'Опыт работы', 'tasks': tasks})
 
 
 def about(request):
